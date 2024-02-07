@@ -76,3 +76,28 @@ Star beside = branch you're currently on
 
     git checkout -b <feature-name>
 
+### Check Git Version
+
+    git --version
+
+
+# Github Clone
+
+## Cloning a website from a Github Repository
+
+1. Get the Repository Code
+    * Navigate to the repository's main page on GitHub and copy the SSH code.
+2. Clone the Repository to your Local Machine
+    * In your terminal, use the 'git clone' command + the repository's URL.
+
+## Creating a new branch and switching to it.
+
+Use the following command:
+
+    git checkout -b new-branch-name
+
+This will let you work on the website files without affecting the main branch.
+
+## Pushing the new branch to the remote repository
+    git push origin new-branch-name
+
