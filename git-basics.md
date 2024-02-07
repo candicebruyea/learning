@@ -63,3 +63,16 @@ Unstage files set to be committed.
 
     git restore --staged <file>...
 
+### Check how many branches
+Star beside = branch you're currently on
+   
+    git branch
+
+### Switch between branches
+
+    git checkout
+
+### Make new branch
+
+    git checkout -b <feature-name>
+
