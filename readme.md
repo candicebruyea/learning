@@ -1,7 +1,7 @@
 # My Study Notes Repository
 
 ## Why a Repository for Study Notes?
-When taking code courses online, I needed to learn a lot of new languages quickly, and hands-on experience was brief. I found the info was difficult to retain.
+When taking code courses online, I needed to learn a lot of new languages quickly and hands-on experience was brief. Some info was difficult to retain.
 
 Once all my courses were complete, I decided to review what I learned using better study methods.
 The idea to make a repository came from a [reddit post](https://www.reddit.com/r/learnprogramming/comments/11n6n7z/using_github_to_write_my_notes_has_helped_me/) by u/Cylvher.
@@ -24,7 +24,8 @@ Markdown is an easy way to write plaintext and convert it to valid html. Thus, c
 * PHPStorm is the preferred tool amongst the devs I'm working with right now.
 * PHPStorm has some smart tracking features that will keep my project organized (like managing relative links if I change the project's file structure).
 
-## 
+## Index
 
-
+### Cheat Sheets
+Markdown
 
