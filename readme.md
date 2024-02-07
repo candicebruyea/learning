@@ -27,5 +27,5 @@ Markdown is an easy way to write plaintext and convert it to valid html. Thus, c
 ## Index
 
 ### Cheat Sheets
-Markdown
+[Markdown](markdown.md)
 
