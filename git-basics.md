@@ -1,5 +1,32 @@
 # Git Basics
 
+## Git Workflow
+
+### Create
+Create a new file or change an existing file.
+
+### Stage Files
+Tracks a file to be saved in Git.
+
+    git add . will track all untracked files
+    git add <filename or folder> will track specific file and folders 
+
+### Commit
+Saves the changes locally in git.
+
+    git commit -m "What and why you're committing" -m "some description"
+
+### Push
+Committed changes are pushed to the remote directory.  
+origin = location of our git repository  
+main - branch we want to commit to.
+
+    git push origin main
+
+
+![local-git-workflow.png](images/local-git-workflow.png)
+
+
 ## Terminal Commands
 
 ### Change directory  
@@ -35,33 +62,4 @@ Say where you want to push to by default
 Unstage files set to be committed.
 
     git restore --staged <file>...
-
-
-
-## Git Workflow
-
-### Create
-Create a new file or change an existing file.
-
-### Stage Files
-Tracks a file to be saved in Git.  
-
-    git add . will track all untracked files
-    git add <filename or folder> will track specific file and folders 
-
-### Commit
-Saves the changes locally in git. 
-
-    git commit -m "What and why you're committing" -m "some description"
-
-### Push
-Committed changes are pushed to the remote directory.  
-origin = location of our git repository  
-main - branch we want to commit to.
-
-    git push origin main
-
-
-![local-git-workflow.png](images/local-git-workflow.png)
-
 

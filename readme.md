@@ -27,5 +27,10 @@ Markdown is an easy way to write plaintext and convert it to valid html. Thus, c
 ## Index
 
 ### Cheat Sheets
-[Markdown](markdown.md)
+* [Markdown](markdown.md)
+* [Git](git-basics.md)
+* [Citation](citation.md)
+
+### Study Methods
+* [Cornell Notes](cornell-notes.md)
 
