@@ -1,0 +1,5 @@
+# Ignore hidden Finder files
+*.DS_Store
+
+# Ignore hidden JetBrains files
+*.idea/
