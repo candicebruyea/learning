@@ -26,3 +26,8 @@ This module generates random content for your Drupal website.
     * You should see green banner stating number of nodes created.
 9. Check website to make sure you can see the content.
 
+## Sources
+"Generate content using devel module in Drupal | Drupal 8, Drupal 9" Youtube @drupal-academy
+[https://www.youtube.com/watch?v=GBPAwl8HCCM](https://www.youtube.com/watch?v=GBPAwl8HCCM)
+
+
