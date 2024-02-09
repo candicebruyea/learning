@@ -34,4 +34,5 @@ Markdown is an easy way to write plaintext and convert it to valid html. Thus, c
 
 ### Study Methods
 * [Cornell Notes](cornell-notes.md)
+* [Spaced Repetition](spaced-repetition.md)
 
