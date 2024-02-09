@@ -1,7 +1,7 @@
 # My Study Notes Repository
 
 ## Why a Repository for Study Notes?
-When taking code courses online, I needed to learn a lot of new languages quickly and hands-on experience was brief. Some info was difficult to retain.
+When taking code courses online, I learned a lot of new languages quickly. Hands-on experience was brief, and some info was difficult to retain.
 
 Once all my courses were complete, I decided to review what I learned using better study methods.
 The idea to make a repository came from a [reddit post](https://www.reddit.com/r/learnprogramming/comments/11n6n7z/using_github_to_write_my_notes_has_helped_me/) by u/Cylvher.
