@@ -101,3 +101,10 @@ This will let you work on the website files without affecting the main branch.
 ## Pushing the new branch to the remote repository
     git push origin new-branch-name
 
+# Using the Nano Editor
+
+## Open an existing file
+      nano <filename.extension>
+
+## Create a new file
+      nano new_<filename.extension>
