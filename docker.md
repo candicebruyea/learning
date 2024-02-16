@@ -93,7 +93,7 @@ View a summary of image vulnerabilities and recommendations
 
 
 
-# Development Workflow
+# Development Workflow Basics
 
 ## Add a Dockerfile to your site files (allows you to run it with Docker). 
 Contains instructions that Docker uses to package your site into an Image.
@@ -106,4 +106,53 @@ Contains instructions that Docker uses to package your site into an Image.
   * ETC
 
 ## Once you have an Image, tell Docker to start a Container using that Image.
-Container is a process that runs the application locally on your machine - has its own filesystem provided by the Image.
+Container is a process with its own file system provided by the Image
+Our Site gets loaded inside the Container (an isolated environment) locally on our machine.
+
+## Docker Hub
+Once our image is registered on Docker hub, we can put it on any machines running Docker.
+On the new machine, we just tell Docker to start a Container using that Image.
+
+# Dev Workflow Detailed Steps
+
+## Create The Website 
+1. Make a directory for your project.
+        
+        mkdir hello-docker
+2. Go inside the directory
+
+        cd hello-docker
+3. Open directory using PHPStorm 
+
+         phpstorm .
+4. Create your site files.
+
+## Package the Site using Docker
+### Write the instructions for running the site into a Dockerfile
+1. Create Dockerfile in PHPStorm, filename: Dockerfile (no extension)
+   * PHPStorm might ask to install the recommended extensions for Docker, allow this.
+2. Write instructions for packaging the site into the Dockerfile
+   * Base Image (official images can be found on Docker Hub)
+   * Other stuff (I haven't gone into depth on this subject yet)
+3. Tell Docker to package up our site files into an image file.
+    * specify a tag for the file with -t
+    * specify where docker can find the Dockerfile (. in this case) 
+
+        
+         docker build -t hello-docker 
+4. To see all Docker images in this directory... 
+
+        docker image ls
+
+## Run the Site Image on any computer using Docker
+
+1. In terminal, run the image using docker run + image name.
+   
+        docker run hello-docker
+
+24:30
+
+# Sources
+"Docker Tutorial for Beginners" *Youtube* @@programmingwithmosh 
+[https://www.youtube.com/watch?v=pTFZFxd4hOI](https://www.youtube.com/watch?v=pTFZFxd4hOI)
+
