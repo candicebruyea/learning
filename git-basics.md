@@ -5,7 +5,8 @@
 ### Create
 Create a new file or change an existing file.
       
-      git init will initialize new git project. 
+      git init will initialize new git project.
+      touch filename.txt will create a new empty file.
 
 ### Stage Files
 Tracks a file to be saved in Git.

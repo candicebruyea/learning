@@ -1,5 +1,7 @@
 # My Study Notes Repository
 
+[Jump To Notes Index](index.md)
+
 ## Why a Repository for Study Notes?
 When taking code courses online, I learned a lot of new languages quickly. Hands-on experience was brief, and some info was difficult to retain.
 
@@ -24,27 +26,5 @@ Markdown is an easy way to write plaintext and convert it to valid html. Thus, c
 * PHPStorm is the preferred tool amongst the devs I'm working with right now.
 * PHPStorm has some smart tracking features that will keep my project organized (like managing relative links if I change the project's file structure).
 
-# Index
 
-## Cheat Sheets
-
-### Languages
-* [Markdown](markdown.md)
-
-### Git
-* [Git](git-basics.md)
-* [Git Ignore](gitignore.md)
-
-### Drupal
-* [Devel Module](devel-module.md)
-* 
-### Docker
-* [Docker](docker.md)
-
-### Other
-* [Citation](citation.md)
-
-## Study Methods
-* [Cornell Notes](cornell-notes.md)
-* [Spaced Repetition](spaced-repetition.md)
 
