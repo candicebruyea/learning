@@ -19,6 +19,9 @@ The idea to make a repository came from a [reddit post](https://www.reddit.com/r
 2. I copy these physical notes into a .md file using [Markdown](markdown.md) formatting. I use PHP Storm to create and manage these files.
 3. I upload the .md files to a Github repository
 
+## Why Physical Notes?
+Cornell Notes prompt my brain to consider new material in several different ways, whereas typing my notes is too passive for me to do any deep thinking.
+
 ## Why Markdown?
 Markdown is an easy way to write plaintext and convert it to valid html. Thus, content is easily recorded and easily reformatted later for publishing.
 
