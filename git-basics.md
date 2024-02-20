@@ -113,6 +113,9 @@ Star beside = branch you're currently on
 2. Clone the Repository to your Local Machine
     * In your terminal, use the 'git clone' command + the repository's URL.
 
+
+      git clone <ssh key>
+
 ## Creating a new branch and switching to it.
 
 Use the following command:

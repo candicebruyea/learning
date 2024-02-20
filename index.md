@@ -11,7 +11,7 @@
 
 ### Drupal
 * [Devel Module](devel-module.md)
-*
+* [Drupal Termonology](drupal-term.md)
 ### Docker
 * [Docker](docker.md)
 
