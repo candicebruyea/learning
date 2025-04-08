@@ -4,6 +4,9 @@
 
 ### Languages
 * [Markdown](markdown.md)
+* [HTML](html.md)
+* [CSS](css.md)
+* [Javascript](javascript.md)
 
 ### Git
 * [Git](git-basics.md)
