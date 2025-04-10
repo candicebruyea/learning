@@ -139,7 +139,79 @@ This will let you work on the website files without affecting the main branch.
 # Using the Nano Editor
 
 ### Open an existing file
-      nano <filename.extension>
+    nano <filename.extension>
 
 ### Create a new file
-      nano new_<filename.extension>
+    nano new_<filename.extension>
+
+# Checking for an existing SSH Key
+
+Open Terminal.
+
+Enter ls -al ~/.ssh to see if existing SSH keys are present.
+
+    ls -al ~/.ssh
+Lists the files in your .ssh directory, if they exist
+
+Check the directory listing to see if you already have a public SSH key. By default, the filenames of supported public keys for GitHub are one of the following.
+
+    id_rsa.pub
+
+    id_ecdsa.pub
+
+    id_ed25519.pub
+
+If you receive an error that ~/.ssh doesn't exist, you do not have an existing SSH key pair in the default location. You can create a new SSH key pair in the next step.
+
+# Generating a new SSH Key
+
+In the terminal, paste the text below, replacing the email used in the example with your GitHub email address.
+
+    ssh-keygen -t ed25519 -C "your_email@example.com"
+
+This creates a new SSH key, using the provided email as a label.
+
+When you're prompted to "Enter a file in which to save the key", you can press Enter to accept the default file location. 
+
+At the prompt, type a secure passphrase. 
+
+# Adding your SSH key to the ssh-agent
+
+Start the ssh-agent in the background.
+
+    eval "$(ssh-agent -s)"
+
+If you're using macOS Sierra 10.12.2 or later, you will need to modify your ~/.ssh/config file to automatically load keys into the ssh-agent and store passphrases in your keychain.
+
+First, check to see if your ~/.ssh/config file exists in the default location.
+
+    open ~/.ssh/config
+
+If the file doesn't exist, create the file.
+
+    touch ~/.ssh/config
+
+Open your ~/.ssh/config file, then modify the file to contain the following lines. If your SSH key file has a different name or path than the example code, modify the filename or path to match your current setup.
+
+    Host github.com
+    AddKeysToAgent yes
+    UseKeychain yes
+    IdentityFile ~/.ssh/id_ed25519
+
+Note: If you chose not to add a passphrase to your key, you should omit the UseKeychain line.
+If you see a Bad configuration option: usekeychain error, add an additional line to the configuration's' Host *.github.com section.Text
+
+    Host github.com
+    IgnoreUnknown UseKeychain
+
+
+
+Open the ssh directory.
+
+    open ~/.ssh/
+
+Open the id_ed25519.pub file and copy the SSH Key there.
+
+Add your SSH private key to the ssh-agent and store your passphrase in the keychain.
+
+    ssh-add --apple-use-keychain ~/.ssh/id_ed25519
