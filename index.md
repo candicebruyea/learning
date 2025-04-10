@@ -24,3 +24,5 @@
 ## Study Methods
 * [Cornell Notes](cornell-notes.md)
 * [Spaced Repetition](spaced-repetition.md)
+
+CHANGE
