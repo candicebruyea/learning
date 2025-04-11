@@ -12,5 +12,3 @@ This is a cheat sheet for different types of citations in my repository.
     [url](url)
 
 
-    
-    
