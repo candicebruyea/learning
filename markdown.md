@@ -35,7 +35,8 @@ A text to html conversion tool for web writers. An easy way to write plaintext a
     [link text](filename.html)
 
     Within File
-    [link text](#section.heading)
+    [link-text](#id-name)
+    <div id='id-name'/>
 
 ## Images
     [alt text](./images/pic.png)
