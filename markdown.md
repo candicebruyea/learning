@@ -39,7 +39,7 @@ A text to html conversion tool for web writers. An easy way to write plaintext a
     <div id='id-name'/>
 
 ## Images
-    [alt text](./images/pic.png)
+    ![alt text](./images/pic.png)
 
 ## Line Break
     To create a line break, add two spaces to the line above.
