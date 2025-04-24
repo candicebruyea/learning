@@ -129,7 +129,7 @@ Here it is all put together, and how the function displays in the browser.
 An argument is just like a variable. Arguments are specified after the function name, inside the parentheses. You can add as many arguments as you want, just separate them with a comma. 
 
 
-<div id='id-arrays'/>
+<div id='id-array'/>
 
 ## Arrays 
 Think of an array as a collection. You can define an array like this:
