@@ -27,7 +27,7 @@ Template Files
 * header.php - code followed for the header
 * footer.php - code followed for the footer
 Private Files
-* functions.php - can have a convo with the wordpress system here.
+* functions.php - can have a convo with the wordpress system.
 Other Files
 * screenshot.png - screenshot of the theme
 * style.css - css styling
@@ -77,4 +77,36 @@ A typical array of pages:
     <?php }
 
     get_footer();
+    ?>
+
+Give wordpress control of our head, load whatever it needs to load there.
+
+    <head>
+        <?php wp_head(); ?>
+    </head>
+
+To tell Wordpress an instruction, use the add_action function. It will have two arguments: 
+* the first tells what type of action we want it to do
+* the second is the name of the function we want to run.
+
+Example:
+
+    add_action('a', 'b');
+
+Tell Wordpress to load our CSS file (added to functions.php)
+Functions used are:
+* wp_enqueue_style (Enqueues a CSS stylesheet)
+    * get_stylesheet_uri (retrieves stylesheet URI for the active theme)
+* wp_enqueue_scripts (tells action type: load CSS or javascript files)
+* add_action (an instruction for wordpress)
+
+Example
+    
+    <?php 
+
+    function choose_a_name() {
+        wp_enqueue_style('choose_stylesheet_nickname', get_stylesheet_uri());
+    }
+
+        add_action('wp_enqueue_scripts', 'choose_a_name');
     ?>
