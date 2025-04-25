@@ -38,10 +38,14 @@ Tell Wordpress to load our CSS file via functions.php:
 
     <?php wp_head(); ?>
 
+___
+
 Get Header and Footer:
 
     get_header();
     get_footer();
+
+___
 
 Show as many posts as we have:
 
@@ -49,10 +53,14 @@ Show as many posts as we have:
         the_post();
         }
 
+___
+
 The post title and post content:
 
     the_title();
     the_content();
+
+___
 
 A typical array of posts:
 
@@ -79,11 +87,15 @@ A typical array of pages:
     get_footer();
     ?>
 
+___
+
 Give wordpress control of our head, load whatever it needs to load there.
 
     <head>
         <?php wp_head(); ?>
     </head>
+
+___
 
 To tell Wordpress an instruction, use the add_action function. It will have two arguments: 
 * the first tells what type of action we want it to do
@@ -92,6 +104,8 @@ To tell Wordpress an instruction, use the add_action function. It will have two 
 Example:
 
     add_action('a', 'b');
+
+___
 
 Tell Wordpress to load our CSS file (added to functions.php)
 Functions used are:
@@ -110,3 +124,14 @@ Example
 
         add_action('wp_enqueue_scripts', 'choose_a_name');
     ?>
+
+___
+
+Tell Wordpress to run any scripts or data before the closing body tag. 
+* Add this to footer.php, along with the closing body and html tags (remove those from index.php)
+
+Example
+
+    <?php wp_footer(); ?>
+    </body>
+    </html>
